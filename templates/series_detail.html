@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/x-icon">
+        <title>Tristan Studios - {{ serie.title }}</title>
+    </head>
+<body>
+    <header>
+        <h1>{{ serie.title }} Details</h1>
+    </header>
+    <main>
+        <section class="serie-details">
+            <img src="placeholder.jpg" alt="{{ serie.title }} Poster">
+            <h2>{{ serie.title }}</h2>
+            <h3>{{ serie.episodes }}</h3>
+            <h3>{{ serie.release_date }}</h3>
+            <h3>{{ serie.description }}</h3>
+            <h3>{{ serie.genre }}</h3>
+            <h3>{{ serie.image }}</h3>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tristan Studios</p>
+    </footer>
+</body>
+</html>
